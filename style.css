@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing:border-box;
+}
+.container{
+    width:100%;
+    min-height: 100vh;
+    background:linear-gradient(90deg,#cf9aff,#95c0ff);
+    color:#fff;
+    padding-top:8%;
+    padding-left:12%;
+}
+.container h1{
+    display:flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 800;
+
+}
+.container h1 img{
+    width:60px;
+}
+.container button img{
+    width:25px;
+    margin-right:8px;
+
+}
+.container button{
+    display:flex;
+    align-items:center;
+    background:linear-gradient(90deg,#9418fd,#571094);
+    color:#fff;
+    font-size: 16px;
+    border-radius:30px;
+    border:0;
+    outline:0;
+    padding:15px 25px;
+    margin:30px 0 20px;
+    cursor:pointer;
+}
+.input-box{
+    position:relative;
+    width:100%;
+    max-width: 500px;
+    min-height:150px;
+    background:#fff;
+    color:#333;
+    padding:20px;
+    margin:20px 0;
+    outline:none;
+    border-radius:2.5px;
+    cursor:text;
+}
+.input-box img{
+    width:25px;
+    position:absolute;
+    bottom:15px;
+    right:15px;
+    cursor: pointer;
+}
+/* Overlay to dim the background */
+.alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Hidden state for the overlay */
+.alert-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Alert box styling */
+.alert-box {
+    background: #fff;
+    color: #333;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alert-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.alert-box button {
+    background: linear-gradient(90deg, #9418fd, #571094);
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.alert-box button:hover {
+    background: linear-gradient(90deg, #571094, #9418fd);
+}
